@@ -362,6 +362,18 @@
             border: 1px solid var(--border);
         }
 
+        .b-completo {
+            background: rgba(39, 174, 96, 0.2);
+            color: #27AE60;
+            border: 1px solid rgba(39, 174, 96, 0.3);
+        }
+
+        .b-parcial {
+            background: rgba(245, 197, 24, 0.1);
+            color: var(--dourado);
+            border: 1px solid var(--border);
+        }
+
         .jogo-card {
             background: var(--card-bg);
             border: 1px solid var(--border);
@@ -598,6 +610,252 @@
             color: var(--verde-escuro);
         }
 
+        /* PARTICIPANTES PAGE */
+        .part-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            backdrop-filter: blur(8px);
+            transition: background 0.15s;
+        }
+
+        .part-card:hover {
+            background: rgba(15, 92, 46, 0.7);
+        }
+
+        .part-card-left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .part-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--verde-claro), var(--dourado-escuro));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+            color: var(--verde-escuro);
+            flex-shrink: 0;
+        }
+
+        .part-info-nome {
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--branco);
+        }
+
+        .part-info-email {
+            font-size: 12px;
+            color: var(--cinza);
+            margin-top: 2px;
+        }
+
+        .part-card-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .part-pts {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 24px;
+            color: var(--dourado);
+        }
+
+        .part-pts-label {
+            font-size: 10px;
+            color: var(--cinza);
+            text-align: right;
+            line-height: 1.3;
+        }
+
+        /* SOBRE PAGE */
+        .sobre-hero {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(8px);
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .sobre-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--verde-claro), var(--dourado-escuro));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            flex-shrink: 0;
+            border: 3px solid var(--dourado);
+        }
+
+        .sobre-nome {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 32px;
+            color: var(--dourado);
+            letter-spacing: 2px;
+            margin-bottom: 4px;
+        }
+
+        .sobre-titulo {
+            font-size: 14px;
+            color: var(--cinza);
+            margin-bottom: 16px;
+        }
+
+        .sobre-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .sobre-tag {
+            background: rgba(245, 197, 24, 0.1);
+            border: 1px solid var(--border);
+            color: var(--dourado);
+            border-radius: 999px;
+            padding: 4px 14px;
+            font-size: 12px;
+        }
+
+        .sobre-desc {
+            font-size: 14px;
+            color: var(--branco);
+            line-height: 1.7;
+            opacity: 0.85;
+        }
+
+        .sobre-cta {
+            background: linear-gradient(135deg, #0F5C2E, #1A7A3E);
+            border: 1px solid var(--dourado);
+            border-radius: 16px;
+            padding: 32px 40px;
+            text-align: center;
+            backdrop-filter: blur(8px);
+        }
+
+        .sobre-cta-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 28px;
+            color: var(--dourado);
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .sobre-cta-desc {
+            font-size: 14px;
+            color: var(--branco);
+            opacity: 0.85;
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+
+        .sobre-cta-btns {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 999px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s;
+            font-family: 'Inter', sans-serif;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--dourado);
+            color: var(--verde-escuro);
+        }
+
+        .btn-primary:hover {
+            background: var(--dourado-escuro);
+        }
+
+        .btn-secondary {
+            background: rgba(245, 197, 24, 0.1);
+            border: 1px solid var(--border);
+            color: var(--dourado);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(245, 197, 24, 0.2);
+        }
+
+        .sobre-tech {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(8px);
+        }
+
+        .sobre-tech-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+            color: var(--dourado);
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 12px;
+        }
+
+        .tech-item {
+            background: rgba(10, 61, 31, 0.6);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 14px 16px;
+            text-align: center;
+        }
+
+        .tech-icon {
+            font-size: 24px;
+            margin-bottom: 6px;
+        }
+
+        .tech-name {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--branco);
+            margin-bottom: 2px;
+        }
+
+        .tech-desc {
+            font-size: 11px;
+            color: var(--cinza);
+        }
+
         @media (max-width: 768px) {
             main {
                 padding: 12px
@@ -621,6 +879,26 @@
 
             .logo-sub {
                 display: none
+            }
+
+            .sobre-hero {
+                flex-direction: column;
+                padding: 24px;
+                gap: 20px
+            }
+
+            .sobre-avatar {
+                width: 70px;
+                height: 70px;
+                font-size: 32px
+            }
+
+            .sobre-nome {
+                font-size: 24px
+            }
+
+            .sobre-cta {
+                padding: 24px
             }
         }
 
@@ -676,10 +954,14 @@
             <div class="tab" onclick="trocarPagina('jogos', this)">⚽ Jogos</div>
             <div class="tab" onclick="trocarPagina('detalhes', this)">🎯 Detalhes por Jogo</div>
             <div class="tab" onclick="trocarPagina('stats', this)">📊 Estatísticas</div>
+            <div class="tab" onclick="trocarPagina('participantes', this)">👥 Participantes</div>
+            <div class="tab" onclick="trocarPagina('sobre', this)">ℹ️ Sobre</div>
         </div>
     </nav>
 
     <main>
+
+        <!-- RANKING -->
         <div id="page-ranking" class="page ativo">
             <div id="ranking-cards" class="cards-grid"></div>
             <div class="table-wrap">
@@ -695,6 +977,7 @@
             </div>
         </div>
 
+        <!-- JOGOS -->
         <div id="page-jogos" class="page">
             <div class="filtros-row">
                 <span class="filtro-label">Grupo:</span>
@@ -721,6 +1004,7 @@
             </div>
         </div>
 
+        <!-- DETALHES POR JOGO -->
         <div id="page-detalhes" class="page">
             <div class="filtros-row">
                 <span class="filtro-label">Filtrar:</span>
@@ -734,6 +1018,7 @@
             </div>
         </div>
 
+        <!-- STATS -->
         <div id="page-stats" class="page">
             <div id="stats-cards" class="cards-grid"></div>
             <div class="grid-2">
@@ -751,6 +1036,104 @@
                 </div>
             </div>
         </div>
+
+        <!-- PARTICIPANTES -->
+        <div id="page-participantes" class="page">
+            <div id="part-cards" class="cards-grid"></div>
+            <div class="table-wrap">
+                <div class="table-header">
+                    <span class="table-title">👥 Lista de Participantes</span>
+                    <span style="font-size:12px;color:var(--cinza)" id="part-count"></span>
+                </div>
+                <div id="part-lista">
+                    <div class="loading">
+                        <div class="spinner"></div><span>Carregando participantes...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SOBRE -->
+        <div id="page-sobre" class="page">
+
+            <div class="sobre-hero">
+                <div class="sobre-avatar">👨‍💻</div>
+                <div>
+                    <div class="sobre-nome">Luan Gonçalves</div>
+                    <div class="sobre-titulo">Engenheiro de Computação • Mestre em Computação</div>
+                    <div class="sobre-tags">
+                        <span class="sobre-tag">🖥️ Virtualização de Servidores</span>
+                        <span class="sobre-tag">🌐 Desenvolvimento Web & Apps</span>
+                        <span class="sobre-tag">🔒 Segurança Eletrônica</span>
+                        <span class="sobre-tag">🤖 Consultor IA</span>
+                        <span class="sobre-tag">☁️ Cloud & Infraestrutura</span>
+                    </div>
+                    <div class="sobre-desc">
+                        Profissional de tecnologia com expertise em virtualização de servidores, desenvolvimento de
+                        páginas e aplicativos, segurança eletrônica e consultoria em tecnologias de Inteligência
+                        Artificial. Apaixonado por transformar ideias em soluções práticas e inovadoras que geram valor
+                        real para empresas e pessoas.
+                        <br><br>
+                        Este sistema de Bolão da Copa 2026 foi desenvolvido inteiramente por mim utilizando o
+                        ecossistema Google — do formulário de palpites até o dashboard ao vivo — com automação completa
+                        via Apps Script, sem nenhum custo de infraestrutura.
+                    </div>
+                </div>
+            </div>
+
+            <div class="sobre-tech">
+                <div class="sobre-tech-title">🛠️ Tecnologias utilizadas neste projeto</div>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <div class="tech-icon">📋</div>
+                        <div class="tech-name">Google Forms</div>
+                        <div class="tech-desc">Coleta de palpites</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">📊</div>
+                        <div class="tech-name">Google Sheets</div>
+                        <div class="tech-desc">Banco de dados</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">⚡</div>
+                        <div class="tech-name">Apps Script</div>
+                        <div class="tech-desc">Automação e cálculos</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">📈</div>
+                        <div class="tech-name">Looker Studio</div>
+                        <div class="tech-desc">Dashboard analítico</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">🌐</div>
+                        <div class="tech-name">HTML / CSS / JS</div>
+                        <div class="tech-desc">Dashboard ao vivo</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">🐙</div>
+                        <div class="tech-name">GitHub Pages</div>
+                        <div class="tech-desc">Hospedagem gratuita</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sobre-cta">
+                <div class="sobre-cta-title">🏆 Quer um Bolão igual para sua empresa?</div>
+                <div class="sobre-cta-desc">
+                    Sistema completo com formulários personalizados, pontuação automática, ranking ao vivo e dashboard
+                    interativo.<br>
+                    Rápido de implementar, custo zero de infraestrutura e experiência incrível para sua equipe!
+                </div>
+                <div class="sobre-cta-btns">
+                    <a href="https://www.linkedin.com/in/luan-goncalves" target="_blank" class="btn-cta btn-primary">💼
+                        Me chama no LinkedIn</a>
+                    <a href="https://github.com/LuanGoncalves2021/bolao-copa-2026" target="_blank"
+                        class="btn-cta btn-secondary">🐙 Ver código no GitHub</a>
+                </div>
+            </div>
+
+        </div>
+
     </main>
 
     <script>
@@ -904,6 +1287,50 @@
             }).join('');
         }
 
+        function renderParticipantes() {
+            const d = DATA.ranking;
+            if (!d.length) { document.getElementById('part-lista').innerHTML = '<div class="loading"><span>Nenhum participante ainda.</span></div>'; return; }
+
+            const jogosEnc = DATA.jogos.filter(j => j.status === 'ENCERRADO').length;
+            const maxPts = Math.max(...d.map(p => parseInt(p.total_pontos) || 0)) || 1;
+
+            document.getElementById('part-cards').innerHTML = `
+    <div class="card"><div class="card-label">👥 Total inscritos</div><div class="card-value">${d.length}</div><div class="card-sub">participantes</div></div>
+    <div class="card"><div class="card-label">✅ Jogos encerrados</div><div class="card-value">${jogosEnc}</div><div class="card-sub">de 72 jogos</div></div>
+    <div class="card"><div class="card-label">🏆 Pontuação máxima</div><div class="card-value">${maxPts}</div><div class="card-sub">pontos possíveis: ${jogosEnc * 10}</div></div>`;
+
+            document.getElementById('part-count').textContent = d.length + ' inscritos';
+
+            const html = d.map((p, i) => {
+                const pos = parseInt(p.posicao) || (i + 1);
+                const iniciais = (p.nome || '?').split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
+                const medal = pos === 1 ? '🥇' : pos === 2 ? '🥈' : pos === 3 ? '🥉' : '';
+                const pts = parseInt(p.total_pontos) || 0;
+                const acertos = parseInt(p.jogos_pontuados) || 0;
+                const pctBarra = jogosEnc > 0 ? Math.round((acertos / jogosEnc) * 100) : 0;
+                const statusBadge = acertos > 0 ? '<span class="badge b-completo">✅ Pontuando</span>' : '<span class="badge b-parcial">⏳ Aguardando</span>';
+
+                return `<div class="part-card">
+      <div class="part-card-left">
+        <div class="part-avatar">${medal || iniciais}</div>
+        <div>
+          <div class="part-info-nome">${p.nome || '-'}</div>
+          <div class="part-info-email">${p.email || ''}</div>
+        </div>
+      </div>
+      <div class="part-card-right">
+        ${statusBadge}
+        <div style="text-align:right">
+          <div class="part-pts">${pts}<span style="font-size:12px;color:var(--cinza)">pts</span></div>
+          <div class="part-pts-label">${acertos} acertos<br>${pctBarra}% taxa</div>
+        </div>
+      </div>
+    </div>`;
+            }).join('');
+
+            document.getElementById('part-lista').innerHTML = html;
+        }
+
         async function carregarTudo() {
             try {
                 const [ranking, pontuacao, jogos, stats, gabarito] = await Promise.all([
@@ -918,6 +1345,7 @@
                 renderJogos();
                 renderDetalhes();
                 renderStats();
+                renderParticipantes();
                 const now = new Date();
                 document.getElementById('ultimo-update').textContent = 'Atualizado ' + now.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
             } catch (e) {
@@ -938,10 +1366,10 @@
             document.querySelector('.tv-btn').textContent = document.body.classList.contains('tv-mode') ? '❌ Sair TV' : '📺 Modo TV';
         }
 
-        window.addEventListener('DOMContentLoaded', function() {
-        carregarTudo();
-        setInterval(carregarTudo, INTERVAL);
-});
+        window.addEventListener('DOMContentLoaded', function () {
+            carregarTudo();
+            setInterval(carregarTudo, INTERVAL);
+        });
     </script>
 </body>
 

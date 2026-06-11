@@ -1027,7 +1027,9 @@
         }
 
         .th-enc {
-            color: var(--dourado) !important
+            color: var(--dourado) !important;
+        
+        .b-vivo { background: rgba(231,76,60,0.3); color: #E74C3C; border: 1px solid rgba(231,76,60,0.5); animation: pulse 1.5s infinite; }    
         }
 
         @media(max-width:768px) {
@@ -1406,7 +1408,8 @@
             if (!filtrados.length) { document.getElementById('jogos-lista').innerHTML = '<div class="loading"><span>Nenhum jogo encontrado.</span></div>'; return; }
             const html = filtrados.map(j => {
                 const enc = j.status === 'ENCERRADO';
-                const badge = enc ? '<span class="badge b-enc">✅ Encerrado</span>' : '<span class="badge b-agu">⏳ Aguardando</span>';
+                const vivo = j.status === 'AO VIVO';
+                const badge = enc ? '<span class="badge b-enc">✅ Encerrado</span>' : vivo ? '<span class="badge b-vivo">🔴 Ao Vivo</span>' : '<span class="badge b-agu">⏳ Aguardando</span>';
                 const placar = enc ? `<span class="jogo-placar-real">${j.gols_1} x ${j.gols_2}</span>` : `<span style="color:var(--cinza);font-size:13px">${j.horario || ''}</span>`;
                 return `<div class="jogo-card"><div class="jogo-card-header"><div class="jogo-info"><span class="jogo-id-badge">Grupo ${j.grupo} — ${j.jogo_id}</span><span class="jogo-times">${j.selecao_1} x ${j.selecao_2}</span>${badge}</div>${placar}</div></div>`;
             }).join('');
